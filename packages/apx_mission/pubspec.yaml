@@ -1,0 +1,16 @@
+name: apx_mission
+description: APX mission planning — command catalogue, patterns (survey, corridor, orbit), payloads, compiler, validator and plan files.
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  apx_geo: any
+  apx_mavlink: any
+  apx_vehicle: any
+
+dev_dependencies:
+  apx_link: any
+  test: ^1.25.0

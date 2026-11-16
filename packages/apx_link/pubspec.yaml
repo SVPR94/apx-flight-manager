@@ -1,0 +1,13 @@
+name: apx_link
+description: Transports (UDP, TCP, serial, replay) carrying MAVLink for APX Flight Manager.
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  apx_mavlink: any
+
+dev_dependencies:
+  test: ^1.25.0

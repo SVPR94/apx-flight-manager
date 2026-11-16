@@ -1,0 +1,7 @@
+name: param_meta_gen
+description: Generates APX parameter metadata (range, default, description) from the firmware's param_manager.cpp.
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0

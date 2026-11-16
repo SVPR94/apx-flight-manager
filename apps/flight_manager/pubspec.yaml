@@ -1,0 +1,62 @@
+name: apx_flight_manager
+description: "APX Flight Manager ground control station"
+publish_to: 'none'
+version: 0.1.0+1
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  apx_geo: any
+  apx_link: any
+  apx_mission: any
+  apx_mavlink: any
+  apx_vehicle: any
+  flutter_map: ^8.3.0
+  flutter_riverpod: ^3.4.0
+  latlong2: ^0.10.0
+  lucide_icons_flutter: ^4.0.0
+  path_provider: ^2.1.6
+  file_selector: ^1.1.0
+  image: ^4.12.0
+  flutter_tts: ^4.2.5
+  media_kit: ^1.2.6
+  media_kit_video: ^2.0.1
+  media_kit_libs_video: ^1.0.7
+  gal: ^2.3.3
+  ffi: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  sqlite3: ^3.8.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/Inter-OFL.txt
+    - assets/fonts/JetBrainsMono-OFL.txt
+    - assets/icon/app_icon.png
+    - assets/icon/app_icon_128.png
+  fonts:
+    # Bundled so the app needs no network for fonts in the field (OFL, see assets/fonts).
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
+    - family: JetBrainsMono
+      fonts:
+        - asset: assets/fonts/JetBrainsMono-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/JetBrainsMono-SemiBold.ttf
+          weight: 600

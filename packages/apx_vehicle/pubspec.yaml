@@ -1,0 +1,14 @@
+name: apx_vehicle
+description: Vehicle session, telemetry, commands, parameters and mission transfer for APX.
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  apx_link: any
+  apx_mavlink: any
+
+dev_dependencies:
+  test: ^1.25.0

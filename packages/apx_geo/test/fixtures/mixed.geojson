@@ -1,0 +1,28 @@
+{
+  "type": "FeatureCollection",
+  "name": "field survey",
+  "features": [
+    { "type": "Feature", "id": "pump-1", "properties": { "label": "Pump", "depth_m": 12.5, "ok": true, "tags": ["a", "b"] },
+      "geometry": { "type": "Point", "coordinates": [73.86, 18.53, 560] } },
+    { "type": "Feature", "properties": { "label": "Wells" },
+      "geometry": { "type": "MultiPoint", "coordinates": [[73.861, 18.531], [73.862, 18.532]] } },
+    { "type": "Feature", "properties": { "label": "Canal" },
+      "geometry": { "type": "LineString", "coordinates": [[73.85, 18.52], [73.855, 18.525], [73.86, 18.52]] } },
+    { "type": "Feature", "properties": { "label": "Roads" },
+      "geometry": { "type": "MultiLineString", "coordinates": [[[73.84, 18.51], [73.845, 18.515]], [[73.846, 18.516], [73.847, 18.517]]] } },
+    { "type": "Feature", "properties": { "label": "Field with pond" },
+      "geometry": { "type": "Polygon", "coordinates": [
+        [[73.80, 18.50], [73.82, 18.50], [73.82, 18.52], [73.80, 18.52], [73.80, 18.50]],
+        [[73.805, 18.505], [73.805, 18.51], [73.81, 18.51], [73.81, 18.505], [73.805, 18.505]] ] } },
+    { "type": "Feature", "properties": { "label": "Two plots" },
+      "geometry": { "type": "MultiPolygon", "coordinates": [
+        [[[73.70, 18.40], [73.71, 18.40], [73.71, 18.41], [73.70, 18.40]]],
+        [[[73.72, 18.40], [73.73, 18.40], [73.73, 18.41], [73.72, 18.40]]] ] } },
+    { "type": "Feature", "properties": { "label": "Site" },
+      "geometry": { "type": "GeometryCollection", "geometries": [
+        { "type": "Point", "coordinates": [73.9, 18.6] },
+        { "type": "Polygon", "coordinates": [[[73.9, 18.6], [73.91, 18.6], [73.91, 18.61], [73.9, 18.6]]] } ] } },
+    { "type": "Feature", "properties": { "label": "No shape" }, "geometry": null },
+    { "type": "Feature", "properties": { "label": "Broken" }, "geometry": { "type": "LineString", "coordinates": [[73.8]] } }
+  ]
+}

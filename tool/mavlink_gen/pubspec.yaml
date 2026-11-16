@@ -1,0 +1,10 @@
+name: mavlink_gen
+description: Generates the apx_mavlink Dart codec from MAVLink XML definitions.
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  xml: ^7.1.0

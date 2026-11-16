@@ -1,0 +1,323 @@
+[
+ {
+  "name": "HEARTBEAT",
+  "id": 0,
+  "seq": 0,
+  "hex": "fd090000000101000000030000000203810403f692",
+  "fields": {
+   "type": 2,
+   "autopilot": 3,
+   "base_mode": 129,
+   "custom_mode": 3,
+   "system_status": 4,
+   "mavlink_version": 3
+  }
+ },
+ {
+  "name": "SYS_STATUS",
+  "id": 1,
+  "seq": 1,
+  "hex": "fd1f00000101010100003f0001003f0001003f000100fa003831fa000000000000000000000000005f10f9",
+  "fields": {
+   "onboard_control_sensors_present": 65599,
+   "onboard_control_sensors_enabled": 65599,
+   "onboard_control_sensors_health": 65599,
+   "load": 250,
+   "voltage_battery": 12600,
+   "current_battery": 250,
+   "battery_remaining": 95,
+   "drop_rate_comm": 0,
+   "errors_comm": 0,
+   "errors_count1": 0,
+   "errors_count2": 0,
+   "errors_count3": 0,
+   "errors_count4": 0,
+   "onboard_control_sensors_present_extended": 0,
+   "onboard_control_sensors_enabled_extended": 0,
+   "onboard_control_sensors_health_extended": 0
+  }
+ },
+ {
+  "name": "ATTITUDE",
+  "id": 30,
+  "seq": 2,
+  "hex": "fd1c00000201011e000040e20100cdcccc3dcdcc4cbe666616400ad7233c0ad7a3bc8fc2f53ca749",
+  "fields": {
+   "time_boot_ms": 123456,
+   "roll": 0.1,
+   "pitch": -0.2,
+   "yaw": 2.35,
+   "rollspeed": 0.01,
+   "pitchspeed": -0.02,
+   "yawspeed": 0.03
+  }
+ },
+ {
+  "name": "GLOBAL_POSITION_INT",
+  "id": 33,
+  "seq": 3,
+  "hex": "fd1c0000030101210000e803000020fd090b58a3052c603d0800983a00007800d8ff0500bc343cd4",
+  "fields": {
+   "time_boot_ms": 1000,
+   "lat": 185204000,
+   "lon": 738567000,
+   "alt": 540000,
+   "relative_alt": 15000,
+   "vx": 120,
+   "vy": -40,
+   "vz": 5,
+   "hdg": 13500
+  }
+ },
+ {
+  "name": "GPS_RAW_INT",
+  "id": 24,
+  "seq": 4,
+  "hex": "fd1e0000040101180000ded96a0000000000ecfc090bdba3052c70400800460061000500ffff0312f71c",
+  "fields": {
+   "time_usec": 7002590,
+   "fix_type": 3,
+   "lat": 185203948,
+   "lon": 738567131,
+   "alt": 540784,
+   "eph": 70,
+   "epv": 97,
+   "vel": 5,
+   "cog": 65535,
+   "satellites_visible": 18,
+   "alt_ellipsoid": 0,
+   "h_acc": 0,
+   "v_acc": 0,
+   "vel_acc": 0,
+   "hdg_acc": 0,
+   "yaw": 0
+  }
+ },
+ {
+  "name": "VFR_HUD",
+  "id": 74,
+  "seq": 5,
+  "hex": "fd1100000501014a00009a9999409a99994000c00a44cdcc4c3e8755aa",
+  "fields": {
+   "airspeed": 4.8,
+   "groundspeed": 4.8,
+   "heading": 135,
+   "throttle": 0,
+   "alt": 555.0,
+   "climb": 0.2
+  }
+ },
+ {
+  "name": "PARAM_VALUE",
+  "id": 22,
+  "seq": 6,
+  "hex": "fd1900000601011600000000fa439900110057504e41565f53504545440000000000093259",
+  "fields": {
+   "param_id": "WPNAV_SPEED",
+   "param_value": 500.0,
+   "param_type": 9,
+   "param_count": 153,
+   "param_index": 17
+  }
+ },
+ {
+  "name": "PARAM_SET",
+  "id": 23,
+  "seq": 7,
+  "hex": "fd1700000701011700000000fa44010152544c5f414c540000000000000000000900ba",
+  "fields": {
+   "target_system": 1,
+   "target_component": 1,
+   "param_id": "RTL_ALT",
+   "param_value": 2000.0,
+   "param_type": 9
+  }
+ },
+ {
+  "name": "COMMAND_LONG",
+  "id": 76,
+  "seq": 8,
+  "hex": "fd2000000801014c00000000803f0098a5460000000000000000000000000000000000000000900101015c48",
+  "fields": {
+   "target_system": 1,
+   "target_component": 1,
+   "command": 400,
+   "confirmation": 0,
+   "param1": 1,
+   "param2": 21196,
+   "param3": 0,
+   "param4": 0,
+   "param5": 0,
+   "param6": 0,
+   "param7": 0
+  }
+ },
+ {
+  "name": "COMMAND_ACK",
+  "id": 77,
+  "seq": 9,
+  "hex": "fd0200000901014d00009001976a",
+  "fields": {
+   "command": 400,
+   "result": 0,
+   "progress": 0,
+   "result_param2": 0,
+   "target_system": 0,
+   "target_component": 0
+  }
+ },
+ {
+  "name": "MISSION_COUNT",
+  "id": 44,
+  "seq": 10,
+  "hex": "fd0400000a01012c000005000101d436",
+  "fields": {
+   "target_system": 1,
+   "target_component": 1,
+   "count": 5,
+   "mission_type": 0
+  }
+ },
+ {
+  "name": "MISSION_ITEM_INT",
+  "id": 73,
+  "seq": 11,
+  "hex": "fd2500000b010149000000000000000000400000000000000000d8080a0b58a3052c000020410200100001010600018752",
+  "fields": {
+   "target_system": 1,
+   "target_component": 1,
+   "seq": 2,
+   "frame": 6,
+   "command": 16,
+   "current": 0,
+   "autocontinue": 1,
+   "param1": 0,
+   "param2": 2.0,
+   "param3": 0,
+   "param4": 0,
+   "x": 185207000,
+   "y": 738567000,
+   "z": 10.0,
+   "mission_type": 0
+  }
+ },
+ {
+  "name": "MISSION_REQUEST_INT",
+  "id": 51,
+  "seq": 12,
+  "hex": "fd0400000c01013300000300ffbe38ba",
+  "fields": {
+   "target_system": 255,
+   "target_component": 190,
+   "seq": 3,
+   "mission_type": 0
+  }
+ },
+ {
+  "name": "MISSION_ACK",
+  "id": 47,
+  "seq": 13,
+  "hex": "fd0200000d01012f0000ffbe0e59",
+  "fields": {
+   "target_system": 255,
+   "target_component": 190,
+   "type": 0,
+   "mission_type": 0
+  }
+ },
+ {
+  "name": "HIGHRES_IMU",
+  "id": 105,
+  "seq": 14,
+  "hex": "fd3f00000e010169000000196d00000000004c3709bd76e09c3dac1c1dc127a009bbe02d903a17b751bbfe65b73e0ad7a33b3a234a3ef2806d44000000006112074400000c42ff1b03135d",
+  "fields": {
+   "time_usec": 7149824,
+   "xacc": -0.0335,
+   "yacc": 0.0766,
+   "zacc": -9.8195,
+   "xgyro": -0.0021,
+   "ygyro": 0.0011,
+   "zgyro": -0.0032,
+   "xmag": 0.3582,
+   "ymag": 0.005,
+   "zmag": 0.1974,
+   "abs_pressure": 950.0148,
+   "diff_pressure": 0.0,
+   "pressure_alt": 540.2872,
+   "temperature": 35.0,
+   "fields_updated": 7167,
+   "id": 3
+  }
+ },
+ {
+  "name": "WIND",
+  "id": 168,
+  "seq": 15,
+  "hex": "fd0800000f0101a8000000008743666646403fff",
+  "fields": {
+   "direction": 270.0,
+   "speed": 3.1,
+   "speed_z": 0.0
+  }
+ },
+ {
+  "name": "STATUSTEXT",
+  "id": 253,
+  "seq": 16,
+  "hex": "fd180000100101fd0000054d697373696f6e2075706c6f616420636f6d706c6574656f0b",
+  "fields": {
+   "severity": 5,
+   "text": "Mission upload complete",
+   "id": 0,
+   "chunk_seq": 0
+  }
+ },
+ {
+  "name": "SET_POSITION_TARGET_GLOBAL_INT",
+  "id": 86,
+  "seq": 17,
+  "hex": "fd350000110101560000e803000090140a0b10af052c0000a0410000000000000000000000000000000000000000000000000000000000000000f80f0101069826",
+  "fields": {
+   "time_boot_ms": 1000,
+   "target_system": 1,
+   "target_component": 1,
+   "coordinate_frame": 6,
+   "type_mask": 4088,
+   "lat_int": 185210000,
+   "lon_int": 738570000,
+   "alt": 20.0,
+   "vx": 0,
+   "vy": 0,
+   "vz": 0,
+   "afx": 0,
+   "afy": 0,
+   "afz": 0,
+   "yaw": 0,
+   "yaw_rate": 0
+  }
+ },
+ {
+  "name": "MANUAL_CONTROL",
+  "id": 69,
+  "seq": 18,
+  "hex": "fd0b0000120101450000640038fff401000000000142df",
+  "fields": {
+   "target": 1,
+   "x": 100,
+   "y": -200,
+   "z": 500,
+   "r": 0,
+   "buttons": 0,
+   "buttons2": 0,
+   "enabled_extensions": 0,
+   "s": 0,
+   "t": 0,
+   "aux1": 0,
+   "aux2": 0,
+   "aux3": 0,
+   "aux4": 0,
+   "aux5": 0,
+   "aux6": 0
+  }
+ }
+]

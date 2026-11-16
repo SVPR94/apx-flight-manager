@@ -1,0 +1,16 @@
+name: apx_flight_manager_workspace
+description: Dart pub workspace root for APX Flight Manager.
+publish_to: none
+
+environment:
+  sdk: ^3.13.0
+
+workspace:
+  - apps/flight_manager
+  - packages/apx_mavlink
+  - packages/apx_link
+  - packages/apx_vehicle
+  - packages/apx_geo
+  - packages/apx_mission
+  - tool/mavlink_gen
+  - tool/param_meta_gen
